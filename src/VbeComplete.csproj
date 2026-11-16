@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>VbeComplete</AssemblyName>
+    <RootNamespace>VbeComplete</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <!-- ApplicationIcon 只进 PE 资源，运行时读不到流；托盘/窗口用下面的 EmbeddedResource。 -->
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodePage>65001</CodePage>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <DebugType>none</DebugType>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <SelfContained>false</SelfContained>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="app.ico">
+      <LogicalName>VbeComplete.app.ico</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

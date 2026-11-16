@@ -1,0 +1,15 @@
+# 编译产物与中间缓存
+src/bin/
+src/obj/
+dist/
+
+# 运行时生成的文件
+firstrun.txt
+autostart.txt
+
+# 编辑器 / 系统
+.workbuddy/
+.vs/
+*.user
+Thumbs.db
+desktop.ini
